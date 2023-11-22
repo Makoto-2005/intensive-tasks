@@ -16,20 +16,20 @@ public class Main {
         System.out.println(getAgeString(age));
     }
 
-    static String getAgeString(int yourAge) {
+    static String getAgeString(int age) {
 
-        if (yourAge < 0 || yourAge > 127) {
+        if (age < 0 || age > 127) {
             return "Проверьте правильность введённых данных либо обратитесь в Книгу Рекордов Гинесса.";
         }
-        if (yourAge % 100 >= 11 && yourAge % 100 <= 19) {
-            return "Вам " + yourAge + " лет";
+        if (age % 100 >= 11 && age % 100 <= 19) {
+            return "Вам " + age + " лет";
         }
-        if (yourAge % 10 >= 2 && yourAge % 10 <= 4) {
-            return "Вам " + yourAge + " года";
+        if (age % 10 >= 2 && age % 10 <= 4) {
+            return "Вам " + age + " года";
         }
-        if (yourAge % 10 == 1) {
-            return "Вам " + yourAge + " год";
+        if (age % 10 == 1) {
+            return "Вам " + age + " год";
         }
-        return "Вам " + yourAge + " лет";
+        return "Вам " + age + " лет";
     }
 }
