@@ -24,7 +24,7 @@ public class Task6 {
                 m %= n;
             }
             if (m == 0) {
-                return m + n;
+                return n;
             }
             n %= m;
         }
